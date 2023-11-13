@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_group"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_diary"
+            style="@style/fragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/rb_diary_selector"
+            android:text="日记"
+            android:textSize="14sp" />
+        <RadioButton
+            android:id="@+id/rb_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            style="@style/fragment"
+            android:drawableTop="@drawable/rb_list_selector"
+            android:text="清单"
+            android:textSize="14sp"
+            />
+        <RadioButton
+            android:id="@+id/rb_post"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            style="@style/fragment"
+            android:drawableTop="@drawable/rb_post_selector"
+            android:text="发布"
+            android:textSize="14sp"
+            />
+        <RadioButton
+            android:id="@+id/rb_user"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            style="@style/fragment"
+            android:drawableTop="@drawable/rb_user_selector"
+            android:text="我的"
+            android:textSize="14sp"
+            />
+    </RadioGroup>
+
+</RelativeLayout>
